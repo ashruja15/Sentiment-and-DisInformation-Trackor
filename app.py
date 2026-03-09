@@ -28,7 +28,7 @@ import re
 # CONFIG
 # ============================
 
-API_KEY = "AIzaSyCxT8qnOQ6GuzXdarLxQ73U-R-IHWR5OX8"
+API_KEY = "YOUR API KEY"
 
 if not API_KEY:
     st.error("⚠️ YouTube API Key missing")
@@ -397,4 +397,5 @@ if video_url and st.button("Analyze Comments"):
         df.to_csv(index=False),
         "truthpulse_full_analysis.csv",
         "text/csv"
+
     )
